@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Configuration;
+
 namespace CleanArchitectureCQRS.Shared.Options;
 
     public static class Extensions

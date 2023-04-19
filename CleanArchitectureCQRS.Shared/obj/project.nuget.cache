@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FHH0mzcUdx7a5pwy8gPSmzPdH2JQr6fCk7Dg1nbMfQVUO8Ch0MVajpIBxdYOiHPAVPbluGQYmk5MgOX7euNXUQ==",
+  "dgSpecHash": "M0jXXTDx9l3YtFyLI8lOT4Xt3g8UNqBy0IZryGvBEMYOm16SuhPDYFssSkZ/zyl6DENdAz4xGmnEUu6c1yQnMQ==",
   "success": true,
   "projectFilePath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared/CleanArchitectureCQRS.Shared.csproj",
   "expectedPackageFiles": [

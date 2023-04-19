@@ -1,3 +1,6 @@
+using CleanArchitectureCQRS.Shared.Abstractions.Queries;
+using Microsoft.Extensions.DependencyInjection;
+
 namespace CleanArchitectureCQRS.Shared.Queries;
 
     internal sealed class InMemoryQueryDispatcher : IQueryDispatcher

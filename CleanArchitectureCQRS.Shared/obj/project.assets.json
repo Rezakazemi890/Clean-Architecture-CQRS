@@ -424,6 +424,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "CleanArchitectureCQRS.Shared.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CleanArchitectureCQRS.Shared.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitectureCQRS.Shared.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -1075,10 +1085,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "CleanArchitectureCQRS.Shared.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj",
+      "msbuildProject": "../CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "CleanArchitectureCQRS.Shared.Abstractions >= 1.0.0",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.Extensions.Configuration.Binder >= 7.0.4",
@@ -1111,7 +1127,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj": {
+              "projectPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

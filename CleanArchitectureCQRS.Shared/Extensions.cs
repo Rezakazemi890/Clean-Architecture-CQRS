@@ -1,3 +1,8 @@
+using CleanArchitectureCQRS.Shared.Exceptions;
+using CleanArchitectureCQRS.Shared.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+
 namespace CleanArchitectureCQRS.Shared;
 
     public static class Extensions

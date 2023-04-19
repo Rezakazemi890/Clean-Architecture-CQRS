@@ -1,3 +1,7 @@
+using System.Text.Json;
+using CleanArchitectureCQRS.Shared.Abstractions.Exceptions;
+using Microsoft.AspNetCore.Http;
+
 namespace CleanArchitectureCQRS.Shared.Exceptions;
 
     internal sealed class ExceptionMiddleware : IMiddleware
