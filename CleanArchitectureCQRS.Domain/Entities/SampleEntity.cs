@@ -1,3 +1,8 @@
+using CleanArchitectureCQRS.Domain.Events;
+using CleanArchitectureCQRS.Domain.Exceptions;
+using CleanArchitectureCQRS.Domain.ValueObjects;
+using CleanArchitectureCQRS.Shared.Abstractions.Domains;
+
 namespace CleanArchitectureCQRS.Domain.Entities;
 
     public class SampleEntity : AggregateRoot<SampleEntityId>
@@ -33,7 +38,7 @@ namespace CleanArchitectureCQRS.Domain.Entities;
 
             if (alreadyExists)
             {
-                throw new SampleEntityItemAlreadyExistsException(_name, item.Name);
+                throw new SampleDuplicateException(_name, item.Name);
             }
 
             _items.AddLast(item);
@@ -73,7 +78,7 @@ namespace CleanArchitectureCQRS.Domain.Entities;
 
             if (item is null)
             {
-                throw new SampleEntityItemNotFoundException(itemName);
+                throw new SampleInvalidException();
             }
 
             return item;

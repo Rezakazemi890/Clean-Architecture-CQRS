@@ -1,8 +1,8 @@
 namespace CleanArchitectureCQRS.Shared.Abstractions.Exceptions;
 
-    public abstract class TravelerCheckListException : Exception
+    public abstract class PublicException : Exception
     {
-        protected TravelerCheckListException(string message) : base(message)
+        protected PublicException(string message) : base(message)
         {
 
         }

@@ -12,7 +12,7 @@ namespace CleanArchitectureCQRS.Shared.Exceptions;
             {
                 await next(context);
             }
-            catch (TravelerCheckListException ex)
+            catch (PublicException ex)
             {
                 context.Response.StatusCode = 400;
                 context.Response.Headers.Add("content-type", "application/json");
