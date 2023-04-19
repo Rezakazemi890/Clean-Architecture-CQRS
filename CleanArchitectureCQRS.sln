@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -8,6 +8,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Shared", "CleanArchitectureCQRS.Shared\CleanArchitectureCQRS.Shared.csproj", "{44AA913A-D602-4417-A8B7-70DB29622BEB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Shared.Abstractions", "CleanArchitectureCQRS.Shared.Abstractions\CleanArchitectureCQRS.Shared.Abstractions.csproj", "{8A3FD2BC-0D97-4ACB-BF0A-D2B7FFAC5E83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Domain", "CleanArchitectureCQRS.Domain\CleanArchitectureCQRS.Domain.csproj", "{2FA421C0-40F3-4183-912C-C714EF3D9AAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{8A3FD2BC-0D97-4ACB-BF0A-D2B7FFAC5E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A3FD2BC-0D97-4ACB-BF0A-D2B7FFAC5E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A3FD2BC-0D97-4ACB-BF0A-D2B7FFAC5E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA421C0-40F3-4183-912C-C714EF3D9AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA421C0-40F3-4183-912C-C714EF3D9AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA421C0-40F3-4183-912C-C714EF3D9AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA421C0-40F3-4183-912C-C714EF3D9AAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8A3FD2BC-0D97-4ACB-BF0A-D2B7FFAC5E83} = {193271D7-F023-4AFC-9B92-1353D345D7E4}
