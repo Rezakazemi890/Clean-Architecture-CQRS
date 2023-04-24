@@ -24,11 +24,11 @@ namespace CleanArchitectureCQRS.Domain.Factories;
             var applicablePolicies = _policies.Where(p => p.IsApplicable(data));
 
             var items = applicablePolicies.SelectMany(p => p.GenerateItems(data));
-            var travelerCheckingList = Create(id, name, destination);
+            var sampleEntity = Create(id, name, destination);
 
-            travelerCheckingList.AddItems(items);
+            sampleEntity.AddItems(items);
 
-            return travelerCheckingList;
+            return sampleEntity;
         }
 
     }
