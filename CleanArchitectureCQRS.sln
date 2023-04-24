@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Application", "CleanArchitectureCQRS.Application\CleanArchitectureCQRS.Application.csproj", "{02573E39-39FB-4524-B782-EC74CC2BCCE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Infrastructure", "CleanArchitectureCQRS.Infrastructure\CleanArchitectureCQRS.Infrastructure.csproj", "{882BC558-F641-4233-AC26-A40F95AA78B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{02573E39-39FB-4524-B782-EC74CC2BCCE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02573E39-39FB-4524-B782-EC74CC2BCCE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02573E39-39FB-4524-B782-EC74CC2BCCE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882BC558-F641-4233-AC26-A40F95AA78B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882BC558-F641-4233-AC26-A40F95AA78B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882BC558-F641-4233-AC26-A40F95AA78B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882BC558-F641-4233-AC26-A40F95AA78B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8A3FD2BC-0D97-4ACB-BF0A-D2B7FFAC5E83} = {193271D7-F023-4AFC-9B92-1353D345D7E4}
