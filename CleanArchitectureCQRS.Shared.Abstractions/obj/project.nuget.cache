@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/e11ZkQwqyc/HKqSS1n7JcoHFxKZ3HxwLt28opZTz2IBVcjXh55wYob3Fo0DaoEX8Ljqimtfc669rMg5BR06lw==",
+  "dgSpecHash": "vP2gmVkJkbHaqkprUUbPSmJZpy2Kq4FmU2XT+Adkd3pQ+4Yde0Q3j1owqL6SsY6yhjJp4rhIZh6n3qSqH0CfAg==",
   "success": true,
   "projectFilePath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj",
   "expectedPackageFiles": [],
