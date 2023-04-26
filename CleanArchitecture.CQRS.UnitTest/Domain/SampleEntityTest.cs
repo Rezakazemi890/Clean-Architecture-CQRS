@@ -1,6 +1,7 @@
 using CleanArchitectureCQRS.Application.Exceptions;
 using CleanArchitectureCQRS.Domain.Entities;
 using CleanArchitectureCQRS.Domain.Events;
+using CleanArchitectureCQRS.Domain.Exceptions;
 using CleanArchitectureCQRS.Domain.Factories;
 using CleanArchitectureCQRS.Domain.Policies;
 using CleanArchitectureCQRS.Domain.ValueObjects;
@@ -22,7 +23,7 @@ public class SampleEntityTest
 
         //ASSERT
         exception.ShouldNotBeNull();
-        exception.ShouldBeOfType<SampleEntityAlreadyExistsException>();
+        exception.ShouldBeOfType<SampleDuplicateException>();
     }
 
     [Fact]
