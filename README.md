@@ -1,6 +1,6 @@
 # Clean Architecture with CQRS Pattern
 
-## This is template and sample, and used pure .net. I tried to biuld a simple structure.
+### This is template and sample, and used pure .net. I tried to biuld a simple structure.
 
 This project is an implementation of the Clean Architecture with CQRS Pattern using .NET 7. The Clean Architecture provides a robust and flexible software design that can easily adapt to changes and maintainability. CQRS (Command Query Responsibility Segregation) pattern separates the application into two parts: Commands and Queries. Commands are responsible for modifying the state of the application while Queries are responsible for retrieving data from the application. The separation of concerns enables scalability and performance optimization for the application.
  
