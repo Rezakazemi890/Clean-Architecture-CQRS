@@ -19,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repository:
 
 
-git clone https://github.com/Rezakazemi890/Clean-Architecture-CQRS.git
+```git clone https://github.com/Rezakazemi890/Clean-Architecture-CQRS.git```
 
 
 2. Open the solution file CleanArchitectureCQRS.sln in Visual Studio.
@@ -33,7 +33,7 @@ git clone https://github.com/Rezakazemi890/Clean-Architecture-CQRS.git
 The project includes unit tests that can be run using the Test Explorer in Visual Studio or by running the following command in the terminal:
 
 
-dotnet test
+```dotnet test```
 
 
 ## Architecture
