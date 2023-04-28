@@ -21,6 +21,7 @@ internal static class Extensions
         var options = configuration.GetOptions<DataBaseOptions>("DataBaseConnectionString");
         services.AddDbContext<ReadDbContext>(ctx =>
         ctx.UseSqlServer(options.ConnectionString));
+
         services.AddDbContext<WriteDbContext>(ctx =>
             ctx.UseSqlServer(options.ConnectionString));
 
