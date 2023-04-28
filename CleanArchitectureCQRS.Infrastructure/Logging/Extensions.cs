@@ -16,13 +16,16 @@ internal static class Extensions
         .Enrich.WithMachineName()
         .WriteTo.Console()
         .WriteTo.Debug()
-        //for elk
+        
+        //You can use that for Connect to elk
+
         // .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(configuration["ElasticSearch:Uri"]))
         // {
         //     AutoRegisterTemplate = true,
         //     AutoRegisterTemplateVersion = AutoRegisterTemplateVersion.ESv6,
         //     IndexFormat = $"{Assembly.GetExecutingAssembly().GetName().Name!.ToLower().Replace(".", "-")}-{environment?.ToLower().Replace(".", "-")}-{DateTime.UtcNow:yyyy-MM}"
         // })
+        
         .ReadFrom.Configuration(configuration)
         .CreateLogger();
 
