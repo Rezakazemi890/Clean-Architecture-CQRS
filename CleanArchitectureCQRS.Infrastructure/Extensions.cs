@@ -14,6 +14,7 @@ public static class Extensions
     {
         services.AddSQLDB(configuration);
         services.AddQueries();
+        services.AddSerilog(configuration);
         //services.AddSingleton<IExternalService, ExternalService>();
         services.TryDecorate(typeof(ICommandHandler<>), typeof(LoggingCommandHandlerDecorator<>));
 
