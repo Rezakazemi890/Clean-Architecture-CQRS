@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Share
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Domain", "CleanArchitectureCQRS.Domain\CleanArchitectureCQRS.Domain.csproj", "{2FA421C0-40F3-4183-912C-C714EF3D9AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Application", "CleanArchitectureCQRS.Application\CleanArchitectureCQRS.Application.csproj", "{02573E39-39FB-4524-B782-EC74CC2BCCE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Command.Application", "CleanArchitectureCQRS.Command.Application\CleanArchitectureCQRS.Command.Application.csproj", "{02573E39-39FB-4524-B782-EC74CC2BCCE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Infrastructure", "CleanArchitectureCQRS.Infrastructure\CleanArchitectureCQRS.Infrastructure.csproj", "{882BC558-F641-4233-AC26-A40F95AA78B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Query.Infrastructure", "CleanArchitectureCQRS.Query.Infrastructure\CleanArchitectureCQRS.Query.Infrastructure.csproj", "{882BC558-F641-4233-AC26-A40F95AA78B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Api", "CleanArchitectureCQRS.Api\CleanArchitectureCQRS.Api.csproj", "{3FC6A760-3A92-49C4-AA0B-4093504613AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureCQRS.Command.Api", "CleanArchitectureCQRS.Command.Api\CleanArchitectureCQRS.Command.Api.csproj", "{3FC6A760-3A92-49C4-AA0B-4093504613AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.CQRS.UnitTest", "CleanArchitecture.CQRS.UnitTest\CleanArchitecture.CQRS.UnitTest.csproj", "{29154E68-2F3B-4EFE-B5F4-5675CDA0849B}"
 EndProject

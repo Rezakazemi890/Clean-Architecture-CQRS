@@ -22,6 +22,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CleanArchitectureCQRS.Domain\CleanArchitectureCQRS.Domain.csproj" />
-    <ProjectReference Include="..\CleanArchitectureCQRS.Application\CleanArchitectureCQRS.Application.csproj" />
+    <ProjectReference Include="..\CleanArchitectureCQRS.Command.Application\CleanArchitectureCQRS.Command.Application.csproj" />
   </ItemGroup>
 </Project>

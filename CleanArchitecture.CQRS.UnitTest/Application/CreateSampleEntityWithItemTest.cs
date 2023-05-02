@@ -1,7 +1,7 @@
-using CleanArchitectureCQRS.Application.Commands;
-using CleanArchitectureCQRS.Application.Commands.Handlers;
-using CleanArchitectureCQRS.Application.Exceptions;
-using CleanArchitectureCQRS.Application.Services;
+using CleanArchitectureCQRS.Command.Application.Commands;
+using CleanArchitectureCQRS.Command.Application.Commands.Handlers;
+using CleanArchitectureCQRS.Command.Application.Exceptions;
+using CleanArchitectureCQRS.Command.Application.Services;
 using CleanArchitectureCQRS.Domain.Consts;
 using CleanArchitectureCQRS.Domain.Entities;
 using CleanArchitectureCQRS.Domain.Factories;

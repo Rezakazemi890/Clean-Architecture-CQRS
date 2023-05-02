@@ -1,4 +1,4 @@
-using CleanArchitectureCQRS.Application.Exceptions;
+using CleanArchitectureCQRS.Command.Application.Exceptions;
 using CleanArchitectureCQRS.Domain.Entities;
 using CleanArchitectureCQRS.Domain.Events;
 using CleanArchitectureCQRS.Domain.Exceptions;
