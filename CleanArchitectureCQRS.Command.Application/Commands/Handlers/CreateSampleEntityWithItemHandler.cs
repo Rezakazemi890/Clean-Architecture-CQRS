@@ -1,9 +1,10 @@
 using CleanArchitectureCQRS.Command.Application.Exceptions;
-using CleanArchitectureCQRS.Command.Application.Services;
+using CleanArchitectureCQRS.Shared.Services;
 using CleanArchitectureCQRS.Domain.Factories;
 using CleanArchitectureCQRS.Domain.Repositories;
 using CleanArchitectureCQRS.Domain.ValueObjects;
 using CleanArchitectureCQRS.Shared.Abstractions.Commands;
+using CleanArchitectureCQRS.Shared.Commands.CommandTypes;
 
 namespace CleanArchitectureCQRS.Command.Application.Commands.Handlers;
 

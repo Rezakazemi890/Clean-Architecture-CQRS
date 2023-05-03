@@ -1,6 +1,7 @@
 using CleanArchitectureCQRS.Command.Application.Exceptions;
 using CleanArchitectureCQRS.Domain.Repositories;
 using CleanArchitectureCQRS.Shared.Abstractions.Commands;
+using CleanArchitectureCQRS.Shared.Commands.CommandTypes;
 
 namespace CleanArchitectureCQRS.Command.Application.Commands.Handlers;
 
@@ -13,7 +14,7 @@ internal sealed class RemoveSampleEntityHandler : ICommandHandler<RemoveSampleEn
 
     public async Task HandleAsync(RemoveSampleEntity command)
     {
-        var sampleEntity = await _repository.GetAsync(command.Id);
+        var sampleEntity = await _repository.GetAsyncById(command.Id);
 
         if (sampleEntity is null)
         {
