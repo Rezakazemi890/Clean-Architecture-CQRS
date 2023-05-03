@@ -1,7 +1,6 @@
-using CleanArchitectureCQRS.Command.Application.Commands;
 using CleanArchitectureCQRS.Command.Application.Commands.Handlers;
 using CleanArchitectureCQRS.Command.Application.Exceptions;
-using CleanArchitectureCQRS.Command.Application.Services;
+using CleanArchitectureCQRS.Shared.Services;
 using CleanArchitectureCQRS.Domain.Consts;
 using CleanArchitectureCQRS.Domain.Entities;
 using CleanArchitectureCQRS.Domain.Factories;
@@ -10,6 +9,7 @@ using CleanArchitectureCQRS.Domain.ValueObjects;
 using CleanArchitectureCQRS.Shared.Abstractions.Commands;
 using NSubstitute;
 using Shouldly;
+using CleanArchitectureCQRS.Shared.Commands.CommandTypes;
 
 namespace CleanArchitecture.CQRS.UnitTest.Application;
 

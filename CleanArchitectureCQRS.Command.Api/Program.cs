@@ -1,5 +1,5 @@
 using CleanArchitectureCQRS.Command.Application;
-using CleanArchitectureCQRS.Query.Infrastructure;
+using CleanArchitectureCQRS.Command.Infrastructure;
 using CleanArchitectureCQRS.Shared;
 using Serilog;
 

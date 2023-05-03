@@ -17,6 +17,6 @@
   <ItemGroup>
     <ProjectReference Include="..\CleanArchitectureCQRS.Shared.Abstractions\CleanArchitectureCQRS.Shared.Abstractions.csproj" />
     <ProjectReference Include="..\CleanArchitectureCQRS.Command.Application\CleanArchitectureCQRS.Command.Application.csproj" />
-    <ProjectReference Include="..\CleanArchitectureCQRS.Query.Infrastructure\CleanArchitectureCQRS.Query.Infrastructure.csproj" />
+    <ProjectReference Include="..\CleanArchitectureCQRS.Command.Infrastructure\CleanArchitectureCQRS.Command.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

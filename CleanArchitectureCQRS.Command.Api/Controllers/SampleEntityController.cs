@@ -1,9 +1,5 @@
-using CleanArchitectureCQRS.Command.Application.Commands;
-using CleanArchitectureCQRS.Command.Application.Commands.Handlers;
-using CleanArchitectureCQRS.Command.Application.DTOs;
-using CleanArchitectureCQRS.Command.Application.Queries;
 using CleanArchitectureCQRS.Shared.Abstractions.Commands;
-using CleanArchitectureCQRS.Shared.Abstractions.Queries;
+using CleanArchitectureCQRS.Shared.Commands.CommandTypes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitectureCQRS.Command.Api.Controllers;
@@ -11,33 +7,17 @@ namespace CleanArchitectureCQRS.Command.Api.Controllers;
 public class SampleEntityController : BaseController
 {
     private readonly ICommandDispatcher _commandDispatcher;
-    private readonly IQueryDispatcher _queryDispatcher;
 
-    public SampleEntityController(ICommandDispatcher commandDispatcher, IQueryDispatcher queryDispatcher)
+    public SampleEntityController(ICommandDispatcher commandDispatcher)
     {
         _commandDispatcher = commandDispatcher;
-        _queryDispatcher = queryDispatcher;
-    }
-
-    [HttpGet("{id:guid}")]
-    public async Task<ActionResult<SampleEntityDto>> Get([FromRoute] GetSampleEntity query)
-    {
-        var result = await _queryDispatcher.QueryAsync(query);
-        return OkOrNotFound(result);
-    }
-
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<SampleEntityDto>>> Get([FromQuery] SearchSampleEntity query)
-    {
-        var result = await _queryDispatcher.QueryAsync(query);
-        return OkOrNotFound(result);
     }
 
     [HttpPost]
     public async Task<IActionResult> Post([FromBody] CreateSampleEntityWithItems command)
     {
         await _commandDispatcher.DispatchAsync(command);
-        return CreatedAtAction(nameof(Get), new { id = command.Id }, null);
+        return Ok();
     }
 
     [HttpPut("{SampleEntityId}/items")]
