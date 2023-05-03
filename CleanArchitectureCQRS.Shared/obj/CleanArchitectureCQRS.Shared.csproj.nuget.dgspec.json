@@ -4,6 +4,63 @@
     "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared/CleanArchitectureCQRS.Shared.csproj": {}
   },
   "projects": {
+    "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Domain/CleanArchitectureCQRS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Domain/CleanArchitectureCQRS.Domain.csproj",
+        "projectName": "CleanArchitectureCQRS.Domain",
+        "projectPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Domain/CleanArchitectureCQRS.Domain.csproj",
+        "packagesPath": "/Users/mr/.nuget/packages/",
+        "outputPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mr/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj": {
+                "projectPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -79,6 +136,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Domain/CleanArchitectureCQRS.Domain.csproj": {
+                "projectPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Domain/CleanArchitectureCQRS.Domain.csproj"
+              },
               "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj": {
                 "projectPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj"
               }

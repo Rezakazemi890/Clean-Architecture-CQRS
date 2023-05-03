@@ -425,6 +425,19 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "CleanArchitectureCQRS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CleanArchitectureCQRS.Shared.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchitectureCQRS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitectureCQRS.Domain.dll": {}
+        }
+      },
       "CleanArchitectureCQRS.Shared.Abstractions/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1086,6 +1099,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "CleanArchitectureCQRS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitectureCQRS.Domain/CleanArchitectureCQRS.Domain.csproj",
+      "msbuildProject": "../CleanArchitectureCQRS.Domain/CleanArchitectureCQRS.Domain.csproj"
+    },
     "CleanArchitectureCQRS.Shared.Abstractions/1.0.0": {
       "type": "project",
       "path": "../CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj",
@@ -1094,6 +1112,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "CleanArchitectureCQRS.Domain >= 1.0.0",
       "CleanArchitectureCQRS.Shared.Abstractions >= 1.0.0",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
@@ -1128,6 +1147,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Domain/CleanArchitectureCQRS.Domain.csproj": {
+              "projectPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Domain/CleanArchitectureCQRS.Domain.csproj"
+            },
             "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj": {
               "projectPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj"
             }

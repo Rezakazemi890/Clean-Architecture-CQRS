@@ -14,5 +14,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CleanArchitectureCQRS.Shared.Abstractions\CleanArchitectureCQRS.Shared.Abstractions.csproj" />
+    <ProjectReference Include="..\CleanArchitectureCQRS.Domain\CleanArchitectureCQRS.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Commands\CommandTypes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\CommandTypes\" />
   </ItemGroup>
 </Project>
