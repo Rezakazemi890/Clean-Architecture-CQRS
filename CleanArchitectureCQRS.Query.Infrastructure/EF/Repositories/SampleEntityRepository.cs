@@ -16,8 +16,10 @@ internal sealed class SampleEntityRepository : ISampleEntityRepository
         _sampleEntity = writeDbContext.SampleEntities;
         _writeDbContext = writeDbContext;
     }
+    public Task<IQueryable<SampleEntity>> GetAsync()
+        => new Task<IQueryable<SampleEntity>>(()=> _sampleEntity.Include("_items"));
 
-    public Task<SampleEntity> GetAsync(SampleEntityId id)
+    public Task<SampleEntity> GetAsyncById(SampleEntityId id)
         => _sampleEntity.Include("_items").SingleOrDefaultAsync(pl => pl.Id == id);
 
     public async Task AddAsync(SampleEntity sampleEntity)

@@ -1,4 +1,5 @@
-using CleanArchitectureCQRS.Command.Application.DTOs;
+using CleanArchitectureCQRS.Domain.Entities;
+using CleanArchitectureCQRS.Query.Application.DTOs;
 using CleanArchitectureCQRS.Query.Infrastructure.EF.Models;
 
 namespace CleanArchitectureCQRS.Query.Infrastructure.EF.Queries;

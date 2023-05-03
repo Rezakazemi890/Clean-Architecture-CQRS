@@ -1,4 +1,4 @@
-using CleanArchitectureCQRS.Command.Application.Services;
+using CleanArchitectureCQRS.Shared.Services;
 using CleanArchitectureCQRS.Query.Infrastructure.EF.Contexts;
 using CleanArchitectureCQRS.Query.Infrastructure.EF.Models;
 using Microsoft.EntityFrameworkCore;

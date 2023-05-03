@@ -1,4 +1,4 @@
-using CleanArchitectureCQRS.Command.Application.Services;
+using CleanArchitectureCQRS.Shared.Services;
 using CleanArchitectureCQRS.Domain.Repositories;
 using CleanArchitectureCQRS.Query.Infrastructure.EF.Contexts;
 using CleanArchitectureCQRS.Query.Infrastructure.EF.Options;

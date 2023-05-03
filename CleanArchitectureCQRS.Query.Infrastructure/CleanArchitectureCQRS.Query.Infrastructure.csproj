@@ -2,7 +2,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CleanArchitectureCQRS.Shared\CleanArchitectureCQRS.Shared.csproj" />
     <ProjectReference Include="..\CleanArchitectureCQRS.Domain\CleanArchitectureCQRS.Domain.csproj" />
-    <ProjectReference Include="..\CleanArchitectureCQRS.Command.Application\CleanArchitectureCQRS.Command.Application.csproj" />
+    <ProjectReference Include="..\CleanArchitectureCQRS.Query.Application\CleanArchitectureCQRS.Query.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
@@ -22,6 +22,7 @@
     <PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="7.0.0" />
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
