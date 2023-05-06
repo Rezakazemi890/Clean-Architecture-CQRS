@@ -2,28 +2,22 @@ using CleanArchitectureCQRS.Command.Application.Exceptions;
 using CleanArchitectureCQRS.Domain.Repositories;
 using CleanArchitectureCQRS.Shared.Abstractions.Commands;
 using CleanArchitectureCQRS.Shared.Commands.CommandTypes;
+using CleanArchitectureCQRS.Shared.Producers;
 
 namespace CleanArchitectureCQRS.Command.Application.Commands.Handlers;
 
 internal sealed class RemoveSampleEntityItemHandler : ICommandHandler<RemoveSampleEntityItem>
 {
-    private readonly ISampleEntityRepository _repository;
+    private readonly IMessageProducer _messageProducer;
 
-    public RemoveSampleEntityItemHandler(ISampleEntityRepository repository)
-        => _repository = repository;
+    public RemoveSampleEntityItemHandler(IMessageProducer messageProducer)
+        => _messageProducer = messageProducer;
 
     public async Task HandleAsync(RemoveSampleEntityItem command)
     {
-        var sampleEntity = await _repository.GetAsyncById(command.sampleEntityId);
+        _messageProducer.SendMessage(command);
 
-        if (sampleEntity is null)
-        {
-            throw new SampleEntityNotFound(command.sampleEntityId);
-        }
-
-        sampleEntity.RemoveItem(command.Name);
-
-        await _repository.UpdateAsync(sampleEntity);
+        await Task.CompletedTask;
     }
 }
 
