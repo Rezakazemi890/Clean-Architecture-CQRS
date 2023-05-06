@@ -24,6 +24,14 @@
     <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="7.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="EF\Commands\" />
+    <None Remove="EF\Commands\Handlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EF\Commands\" />
+    <Folder Include="EF\Commands\Handlers\" />
+  </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

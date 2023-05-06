@@ -18,8 +18,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Commands\CommandTypes\" />
+    <None Remove="Producers\" />
+    <None Remove="Consumers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\CommandTypes\" />
+    <Folder Include="Producers\" />
+    <Folder Include="Consumers\" />
   </ItemGroup>
 </Project>
