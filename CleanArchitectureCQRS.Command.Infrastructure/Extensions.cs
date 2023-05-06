@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using CleanArchitectureCQRS.Shared.Logging;
 using CleanArchitectureCQRS.Command.Infrastructure.Logging;
+using CleanArchitectureCQRS.Command.Infrastructure.Producers;
 
 namespace CleanArchitectureCQRS.Command.Infrastructure;
 
@@ -16,7 +17,7 @@ public static class Extensions
         services.AddSerilog(configuration);
         //services.AddSingleton<IExternalService, ExternalService>();
         services.TryDecorate(typeof(ICommandHandler<>), typeof(LoggingCommandHandlerDecorator<>));
-
+        services.AddRabbitMQ(configuration);
         return services;
     }
 }
