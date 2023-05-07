@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using CleanArchitectureCQRS.Shared.Consumers;
+using CleanArchitectureCQRS.Shared.Rabbit;
 using Microsoft.Extensions.Configuration;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -9,28 +10,17 @@ namespace CleanArchitectureCQRS.Query.Infrastructure.Consumer
 {
     public class MessageConsumer : IMessageConsumer
     {
-        private readonly IConfiguration _configuration;
+        private readonly IRabbitConnectionBuilder _rabbitConnectionBuilder;
 
-        public MessageConsumer(IConfiguration configuration)
+        public MessageConsumer(IRabbitConnectionBuilder rabbitConnectionBuilder)
         {
-            _configuration = configuration;
+            _rabbitConnectionBuilder = rabbitConnectionBuilder;
         }
 
         public void Consume()
         {
-            var factory = new ConnectionFactory
-            {
-                HostName = _configuration.GetSection("RabbitMQ").GetChildren().First(x => x.Key == "HostName").Value,
-                UserName = _configuration.GetSection("RabbitMQ").GetChildren().First(x => x.Key == "UserName").Value,
-                Password = _configuration.GetSection("RabbitMQ").GetChildren().First(x => x.Key == "Password").Value,
-                //AutomaticRecoveryEnabled = true
-            };
 
-            var connection = factory.CreateConnection();
-            using var channel = connection.CreateModel();
-
-            channel.QueueDeclare("sampleEntityQueue", exclusive: false);
-
+            var channel = _rabbitConnectionBuilder.CreateConnection() as IModel;
 
             while (true)
             {

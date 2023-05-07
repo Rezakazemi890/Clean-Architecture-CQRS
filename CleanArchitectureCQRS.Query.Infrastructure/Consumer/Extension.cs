@@ -2,6 +2,7 @@
 using CleanArchitectureCQRS.Query.Infrastructure.BackgroundServices;
 using CleanArchitectureCQRS.Shared.Consumers;
 using CleanArchitectureCQRS.Shared.Producers;
+using CleanArchitectureCQRS.Shared.Rabbit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RabbitMQ.Client;
@@ -13,6 +14,7 @@ namespace CleanArchitectureCQRS.Query.Infrastructure.Consumer
     {
         public static IServiceCollection AddRabbitMQConsumer(this IServiceCollection services, IConfiguration configuration)
         {
+            services.AddSingleton<IRabbitConnectionBuilder, RabbitConnectionBuilder>();
             services.AddScoped<IMessageConsumer, MessageConsumer>();
             services.AddHostedService<MessageConsumerService>();
             return services;

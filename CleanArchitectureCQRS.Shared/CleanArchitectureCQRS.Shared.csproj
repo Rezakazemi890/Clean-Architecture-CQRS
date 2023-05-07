@@ -20,10 +20,12 @@
     <None Remove="Commands\CommandTypes\" />
     <None Remove="Producers\" />
     <None Remove="Consumers\" />
+    <None Remove="Rabbit\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\CommandTypes\" />
     <Folder Include="Producers\" />
     <Folder Include="Consumers\" />
+    <Folder Include="Rabbit\" />
   </ItemGroup>
 </Project>
