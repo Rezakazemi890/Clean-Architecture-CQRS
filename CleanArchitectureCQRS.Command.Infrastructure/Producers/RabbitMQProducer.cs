@@ -1,10 +1,10 @@
 ﻿using System;
-using Newtonsoft.Json;
 using RabbitMQ.Client;
 using System.Text;
 using CleanArchitectureCQRS.Shared.Producers;
 using Microsoft.Extensions.Configuration;
 using CleanArchitectureCQRS.Shared.Rabbit;
+using System.Text.Json;
 
 namespace CleanArchitectureCQRS.Command.Infrastructure.Producers
 {
@@ -22,10 +22,11 @@ namespace CleanArchitectureCQRS.Command.Infrastructure.Producers
 
             var channel = _rabbitConnectionBuilder.CreateConnection() as IModel;
 
-            var json = JsonConvert.SerializeObject(message);
+            var json = JsonSerializer.Serialize(message, message.GetType());
+
             var body = Encoding.UTF8.GetBytes(json);
 
-            channel.BasicPublish(exchange: "", routingKey: "sampleEntityQueue", body: body);            
+            channel.BasicPublish(exchange: "", routingKey: "sampleEntityQueue", body: body);
         }
     }
 }

@@ -27,11 +27,9 @@
     <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="MessageBus\" />
     <None Remove="Producers\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MessageBus\" />
     <Folder Include="Producers\" />
   </ItemGroup>
   <PropertyGroup>

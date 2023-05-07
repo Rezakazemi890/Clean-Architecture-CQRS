@@ -5,11 +5,11 @@ using CleanArchitectureCQRS.Shared.Commands.CommandTypes;
 
 namespace CleanArchitectureCQRS.Query.Infrastructure.EF.Commands.Handlers;
 
-internal sealed class TakeItemHandler : ICommandHandler<TakeItem>
+internal sealed class TakeItemConsumer : IConsumeHandler<TakeItem>
 {
     private readonly ISampleEntityRepository _repository;
 
-    public TakeItemHandler(ISampleEntityRepository repository)
+    public TakeItemConsumer(ISampleEntityRepository repository)
         => _repository = repository;
 
     public async Task HandleAsync(TakeItem command)

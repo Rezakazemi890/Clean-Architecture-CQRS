@@ -3,15 +3,14 @@ using CleanArchitectureCQRS.Domain.Repositories;
 using CleanArchitectureCQRS.Domain.ValueObjects;
 using CleanArchitectureCQRS.Shared.Abstractions.Commands;
 using CleanArchitectureCQRS.Shared.Commands.CommandTypes;
-using CleanArchitectureCQRS.Shared.Producers;
 
 namespace CleanArchitectureCQRS.Query.Infrastructure.EF.Commands.Handlers;
 
-internal sealed class AddSampleEntityItemHandler : ICommandHandler<AddSampleEntityItem>
+internal sealed class AddSampleEntityItemConsumer : IConsumeHandler<AddSampleEntityItem>
 {
     private readonly ISampleEntityRepository _repository;
 
-    public AddSampleEntityItemHandler(ISampleEntityRepository repository)
+    public AddSampleEntityItemConsumer(ISampleEntityRepository repository)
         => _repository = repository;
 
     public async Task HandleAsync(AddSampleEntityItem command)

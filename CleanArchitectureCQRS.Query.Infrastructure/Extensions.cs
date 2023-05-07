@@ -7,6 +7,8 @@ using CleanArchitectureCQRS.Shared.Logging;
 using CleanArchitectureCQRS.Shared.Queries;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using CleanArchitectureCQRS.Shared.Consumers;
+using CleanArchitectureCQRS.Domain.Factories;
 
 namespace CleanArchitectureCQRS.Query.Infrastructure;
 
@@ -16,9 +18,11 @@ public static class Extensions
     {
         services.AddSQLDB(configuration);
         services.AddQueries();
+        services.AddConsumers();
         services.AddSerilog(configuration);
         services.AddRabbitMQConsumer(configuration);
         //services.AddSingleton<IExternalService, ExternalService>();
+        services.AddSingleton<ISampleEntityFactory, SampleEntityFactory>();
         services.TryDecorate(typeof(ICommandHandler<>), typeof(LoggingCommandHandlerDecorator<>));
 
         return services;

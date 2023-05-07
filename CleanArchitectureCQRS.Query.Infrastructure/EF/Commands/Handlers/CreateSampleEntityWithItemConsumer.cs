@@ -8,15 +8,13 @@ using CleanArchitectureCQRS.Shared.Commands.CommandTypes;
 
 namespace CleanArchitectureCQRS.Query.Infrastructure.EF.Commands.Handlers;
 
-public class CreateSampleEntityWithItemHandler : ICommandHandler<CreateSampleEntityWithItems>
+public class CreateSampleEntityWithItemConsumer : IConsumeHandler<CreateSampleEntityWithItems>
 {
     private readonly ISampleEntityRepository _repository;
     private readonly ISampleEntityFactory _factory;
     private readonly ISampleEntityReadService _readService;
 
-
-
-    public CreateSampleEntityWithItemHandler(ISampleEntityRepository repository, ISampleEntityFactory factory,
+    public CreateSampleEntityWithItemConsumer(ISampleEntityRepository repository, ISampleEntityFactory factory,
         ISampleEntityReadService readService)
     {
         _repository = repository;

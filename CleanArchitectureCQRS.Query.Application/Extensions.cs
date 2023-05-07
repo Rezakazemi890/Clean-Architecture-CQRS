@@ -1,4 +1,4 @@
-using CleanArchitectureCQRS.Shared.Commands;
+using CleanArchitectureCQRS.Shared.Consumers;
 using CleanArchitectureCQRS.Shared.Queries;
 using Microsoft.Extensions.DependencyInjection;
 
