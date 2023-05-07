@@ -17,7 +17,7 @@ public static class Extensions
         services.AddSerilog(configuration);
         //services.AddSingleton<IExternalService, ExternalService>();
         services.TryDecorate(typeof(ICommandHandler<>), typeof(LoggingCommandHandlerDecorator<>));
-        services.AddRabbitMQ(configuration);
+        services.AddRabbitMQProducer(configuration);
         return services;
     }
 }

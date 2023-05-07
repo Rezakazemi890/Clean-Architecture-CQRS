@@ -8,7 +8,7 @@ namespace CleanArchitectureCQRS.Command.Infrastructure.Producers;
 
 internal static class Extensions
 {
-    public static IServiceCollection AddRabbitMQ(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddRabbitMQProducer(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddScoped<IMessageProducer, RabbitMQProducer>();
         return services;
