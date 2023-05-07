@@ -23,14 +23,19 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="7.0.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="EF\Commands\" />
     <None Remove="EF\Commands\Handlers\" />
+    <None Remove="BackgroundServices\" />
+    <None Remove="Consumer\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EF\Commands\" />
     <Folder Include="EF\Commands\Handlers\" />
+    <Folder Include="BackgroundServices\" />
+    <Folder Include="Consumer\" />
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>

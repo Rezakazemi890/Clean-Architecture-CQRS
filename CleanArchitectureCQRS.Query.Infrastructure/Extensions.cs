@@ -1,3 +1,4 @@
+using CleanArchitectureCQRS.Query.Infrastructure.Consumer;
 using CleanArchitectureCQRS.Query.Infrastructure.EF;
 using CleanArchitectureCQRS.Query.Infrastructure.Logging;
 using CleanArchitectureCQRS.Query.Infrastructure.Services;
@@ -16,6 +17,7 @@ public static class Extensions
         services.AddSQLDB(configuration);
         services.AddQueries();
         services.AddSerilog(configuration);
+        services.AddRabbitMQConsumer(configuration);
         //services.AddSingleton<IExternalService, ExternalService>();
         services.TryDecorate(typeof(ICommandHandler<>), typeof(LoggingCommandHandlerDecorator<>));
 
