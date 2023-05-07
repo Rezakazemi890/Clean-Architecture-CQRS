@@ -3,6 +3,7 @@ using System.Text;
 using System.Text.Json;
 using CleanArchitectureCQRS.Shared.Abstractions.Commands;
 using CleanArchitectureCQRS.Shared.Consumers;
+using CleanArchitectureCQRS.Shared.Rabbit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -14,13 +15,11 @@ namespace CleanArchitectureCQRS.Query.Infrastructure.BackgroundServices
 {
     public class MessageConsumerService : IHostedService
     {
-        private readonly IConfiguration _configuration;
         private readonly ILogger<MessageConsumerService> _logger;
         private readonly IServiceProvider _serviceProvider;
 
-        public MessageConsumerService(IConfiguration configuration, ILogger<MessageConsumerService> logger, IServiceProvider serviceProvider)
+        public MessageConsumerService(ILogger<MessageConsumerService> logger, IServiceProvider serviceProvider)
         {
-            _configuration = configuration;
             _logger = logger;
             _serviceProvider = serviceProvider;
         }
@@ -31,7 +30,7 @@ namespace CleanArchitectureCQRS.Query.Infrastructure.BackgroundServices
             using (IServiceScope Scop = _serviceProvider.CreateScope())
             {
                 var consumer = Scop.ServiceProvider.GetRequiredService<IMessageConsumer>();
-
+                
                 Task.Run(() => consumer.Consume(), cancellationToken);
             }
             _logger.LogInformation("Consumer Service Started");
