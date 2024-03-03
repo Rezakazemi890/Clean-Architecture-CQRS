@@ -1,8 +1,11 @@
 # Clean Architecture with CQRS Pattern
 
-### This is template and sample, and used pure .net. I tried to biuld a simple structure.
+### This is template and sample, and used pure .NET. I tried to biuld a simple structure.
 
-This project is an implementation of the Clean Architecture with CQRS Pattern using .NET 7. The Clean Architecture provides a robust and flexible software design that can easily adapt to changes and maintainability. CQRS (Command Query Responsibility Segregation) pattern separates the application into two parts: Commands and Queries. Commands are responsible for modifying the state of the application while Queries are responsible for retrieving data from the application. The separation of concerns enables scalability and performance optimization for the application.
+This project is an implementation of the Clean Architecture with CQRS Pattern using .NET 8. 
+The Clean Architecture provides a robust and flexible software design that can easily adapt to changes and maintainability. 
+CQRS (Command Query Responsibility Segregation) pattern separates the application into two parts: Commands and Queries. 
+Commands are responsible for modifying the state of the application while Queries are responsible for retrieving data from the application. The separation of concerns enables scalability and performance optimization for the application.
  
 
 ## Getting Started
@@ -11,7 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* .NET 7 SDK
+* .NET 8 SDK
 * Visual Studio 2019 or Visual Studio Code
 
 ### Installing
@@ -55,7 +58,7 @@ The Clean Architecture with CQRS Pattern consists of the following layers:
 
 ## Technologies Used
 
-* .NET 7
+* .NET 8
 * ASP.NET Core
 * Entity Framework Core
 * xUnit
