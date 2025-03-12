@@ -1,30 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj": {}
+    "D:\\my\\MyRepos\\Clean-Architecture-CQRS\\CleanArchitectureCQRS.Shared.Abstractions\\CleanArchitectureCQRS.Shared.Abstractions.csproj": {}
   },
   "projects": {
-    "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj": {
+    "D:\\my\\MyRepos\\Clean-Architecture-CQRS\\CleanArchitectureCQRS.Shared.Abstractions\\CleanArchitectureCQRS.Shared.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj",
+        "projectUniqueName": "D:\\my\\MyRepos\\Clean-Architecture-CQRS\\CleanArchitectureCQRS.Shared.Abstractions\\CleanArchitectureCQRS.Shared.Abstractions.csproj",
         "projectName": "CleanArchitectureCQRS.Shared.Abstractions",
-        "projectPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/CleanArchitectureCQRS.Shared.Abstractions.csproj",
-        "packagesPath": "/Users/mr/.nuget/packages/",
-        "outputPath": "/Users/mr/Projects/Clean-Architecture-CQRS/CleanArchitectureCQRS.Shared.Abstractions/obj/",
+        "projectPath": "D:\\my\\MyRepos\\Clean-Architecture-CQRS\\CleanArchitectureCQRS.Shared.Abstractions\\CleanArchitectureCQRS.Shared.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\RezaKazemi\\.nuget\\packages\\",
+        "outputPath": "D:\\my\\MyRepos\\Clean-Architecture-CQRS\\CleanArchitectureCQRS.Shared.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/mr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\RezaKazemi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://git.alibaba.ir/api/v4/projects/1524/packages/nuget/index.json": {},
+          "https://git.alibaba.ir/api/v4/projects/1525/packages/nuget/index.json": {},
+          "https://git.alibaba.ir/api/v4/projects/1528/packages/nuget/index.json": {},
+          "https://nexus.indraproject.ir/repository/nuget.org-proxy-v3/index.json": {},
+          "https://pkgs.dev.azure.com/tgbots/Telegram.Bot/_packaging/release/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -32,11 +43,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "imports": [
             "net461",
             "net462",
@@ -48,12 +65,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.201, 9.0.201]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
